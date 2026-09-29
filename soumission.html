@@ -138,6 +138,15 @@
   // Présélectionne le sujet à partir du lien (ex. soumission.html?sujet=emploi)
   const sujet = new URLSearchParams(location.search).get('sujet');
   if (sujet) document.getElementById('sujet').value = sujet;
+
+  // Version de démonstration sur GitHub Pages : l'hébergeur ne reçoit pas les formulaires.
+  // À retirer une fois le formulaire branché (Netlify ou Formspree).
+  if (location.hostname.endsWith('github.io')) {
+    document.querySelector('form[name="soumission"]').addEventListener('submit', e => {
+      e.preventDefault();
+      alert("Version de démonstration : l'envoi du formulaire sera activé au lancement du site.");
+    });
+  }
 </script>
 
 </main>
