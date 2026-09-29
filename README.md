@@ -25,9 +25,11 @@ python3 -m http.server 8080
 
 Puis ouvrir http://localhost:8080.
 
-## Photos
+## Photos et logo
 
-Les 7 photos de `img/` viennent de la page Facebook de l'entreprise. Facebook ne fournit que des versions de 960 px au maximum, donc elles sont un peu douces sur grand écran. **Demander à Gicy les originaux** (depuis son téléphone) et les remplacer en gardant les mêmes noms de fichiers.
+`img/` contient 13 photos de chantier. Les plus nettes (bord de l'eau, lever de soleil, verglas, chantier urbain, neige, foreuse sur chenilles, remorque) ont été fournies directement. Les autres viennent de la page Facebook (960 px au maximum) : carottes de roc, station-service, forage intérieur et foreuse avec camion. Pour les remplacer par de meilleures versions, garder les mêmes noms de fichiers.
+
+Le logo `logo-gg-clair.png` (pour fond foncé) et `logo-gg-fonce.png` (pour fond clair) sont tirés du logo original, avec fond transparent.
 
 ## À faire confirmer par Gicy
 
