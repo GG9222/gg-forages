@@ -269,6 +269,14 @@ strong { color: var(--text); font-weight: 600; }
   .borelog { max-width: 420px; }
 }
 
+/* ---------- Direction ---------- */
+.leaders { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 5vw, 72px); }
+.leader { border-top: 3px solid var(--accent); padding-top: 1.6rem; }
+.leader-role { display: block; font-family: var(--font-mono); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); margin-bottom: .6rem; }
+.leader h3 { font-size: clamp(2.2rem, 4vw, 3rem); margin-bottom: .35em; }
+.leader p { font-size: 1.15rem; margin: 0; }
+@media (max-width: 720px) { .leaders { grid-template-columns: 1fr; } }
+
 /* ---------- Galerie ---------- */
 .gallery { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: repeat(2, clamp(180px, 20vw, 270px)); gap: clamp(8px, 1.2vw, 14px); }
 .gallery img { width: 100%; height: 100%; object-fit: cover; background: var(--surface); }
