@@ -56,6 +56,7 @@
          Sur GitHub Pages, le script plus bas ouvre plutôt un courriel pré-rempli. -->
     <form name="soumission" method="POST" data-netlify="true" netlify-honeypot="site-web" enctype="multipart/form-data" action="merci.html">
       <input type="hidden" name="form-name" value="soumission">
+      <input type="hidden" name="subject" value="Nouvelle demande - ggforages.com">
       <p hidden><label>Ne pas remplir : <input name="site-web"></label></p>
 
       <fieldset>
@@ -78,7 +79,7 @@
         <div class="fields">
           <div><label for="nom">Nom *</label><input id="nom" name="nom" type="text" autocomplete="name" required></div>
           <div><label for="entreprise">Entreprise <span class="opt">(facultatif)</span></label><input id="entreprise" name="entreprise" type="text" autocomplete="organization"></div>
-          <div><label for="courriel">Courriel *</label><input id="courriel" name="courriel" type="email" autocomplete="email" required></div>
+          <div><label for="courriel">Courriel *</label><input id="courriel" name="email" type="email" autocomplete="email" required></div>
           <div><label for="telephone">Téléphone *</label><input id="telephone" name="telephone" type="tel" autocomplete="tel" required></div>
         </div>
       </fieldset>
@@ -150,7 +151,7 @@
       const lignes = [
         'Nom : ' + d.get('nom'),
         'Entreprise : ' + (d.get('entreprise') || ''),
-        'Courriel : ' + d.get('courriel'),
+        'Courriel : ' + d.get('email'),
         'Téléphone : ' + d.get('telephone'),
         '',
         'Chantier : ' + (d.get('adresse_chantier') || ''),
